@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main () {
+func main() {
 
 	// can't be changed
 	const pi float64 = 3.14
@@ -17,7 +17,7 @@ func main () {
 	fmt.Println(x, y)
 
 	// Strings
-	var name  string = "Samuel"
+	var name string = "Samuel"
 	var name2 string = `Souza`
 
 	fmt.Println(name, name2)
@@ -26,7 +26,7 @@ func main () {
 	fmt.Println(len(name))
 
 	// Data types
-	
+
 	// Numeric			Boolean			String		Derived
 	// 	int						true				""				Pointer
 	// 	float					false				``				Array
@@ -37,11 +37,11 @@ func main () {
 	// works
 	a, b := 1, 2
 	fmt.Println(a, ",", b)
-	
+
 	// not works
 	// c, d = 3, 4
 	// fmt.Println(c, ",", d)
-	
+
 	fmt.Println()
 	fmt.Println(`*********************`)
 	fmt.Println()
@@ -49,11 +49,11 @@ func main () {
 	// ****************************** OPERATORS ****************************** //
 	var1, var2 := 5, 6
 
-	fmt.Println("var1 + var2 =", var1 + var2)
-	fmt.Println("var1 - var2 =", var1 - var2)
-	fmt.Println("var1 * var2 =", var1 * var2)
-	fmt.Println("var1 / var2 =", var1 / var2)
-	fmt.Println("var1 % var2 =", var1 % var2)
+	fmt.Println("var1 + var2 =", var1+var2)
+	fmt.Println("var1 - var2 =", var1-var2)
+	fmt.Println("var1 * var2 =", var1*var2)
+	fmt.Println("var1 / var2 =", var1/var2)
+	fmt.Println("var1 % var2 =", var1%var2)
 
 	fmt.Println()
 
@@ -72,7 +72,7 @@ func main () {
 
 	myPointer := 10
 
-	fmt.Println(myPointer)	// Value of myPointer
+	fmt.Println(myPointer)  // Value of myPointer
 	fmt.Println(&myPointer) // Address of myPointer
 
 	fmt.Println()
@@ -117,11 +117,15 @@ func main () {
 	fmt.Println()
 
 	switch age {
-	case 16: fmt.Println("16!")
-	case 18: fmt.Println("18!")
-	case 20: fmt.Println("20!")
-	default: fmt.Println("Default case")
-		
+	case 16:
+		fmt.Println("16!")
+	case 18:
+		fmt.Println("18!")
+	case 20:
+		fmt.Println("20!")
+	default:
+		fmt.Println("Default case")
+
 	}
 
 }
